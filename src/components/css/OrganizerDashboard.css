@@ -1,0 +1,231 @@
+/* General layout */
+.organizer-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  /* Sidebar */
+  .dashboard-sidebar {
+    
+    width: 250px;
+    background-color: #6d83f2;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 20px 10px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboard-sidebar ul li {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #5572d9;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-sidebar ul li:hover {
+    background-color: #3f5cb5;
+  }
+  
+  .dashboard-sidebar ul li.active {
+    background-color: #3f5cb5;
+  }
+  
+  .dashboard-sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Main content */
+  .dashboard-main {
+    margin-left: 270px; /* Space for the sidebar */
+    padding: 20px;
+    
+  }
+  
+  .dashboard-main .card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-main .card h2 {
+    margin: 0 0 10px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .dashboard-main .card p {
+    color: #666;
+  }
+  
+  .dashboard-main .card .action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .dashboard-main .card .action-buttons button {
+    background-color: #6d83f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dashboard-main .card .action-buttons button:hover {
+    background-color: #5572d9;
+  }
+  
+  /* Table for managing participants/events */
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-table thead {
+    background-color: #6d83f2;
+    color: white;
+  }
+  
+  .dashboard-table thead th {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .dashboard-table tbody tr {
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s;
+  }
+  
+  .dashboard-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .dashboard-table tbody td {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .dashboard-table tbody td .edit-btn {
+    background-color: #6d83f2;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard-table tbody td .edit-btn:hover {
+    background-color: #5572d9;
+  }
+  
+  .dashboard-table tbody td .delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard-table tbody td .delete-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Search bar */
+  .dashboard-search {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dashboard-search input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .dashboard-search button {
+    background-color: #6d83f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dashboard-search button:hover {
+    background-color: #5572d9;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .dashboard-sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+  
+    .dashboard-main {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .dashboard-table thead {
+      display: none;
+    }
+  
+    .dashboard-table tbody tr {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    .dashboard-table tbody td {
+      padding: 10px 0;
+    }
+  }
+  
+
+  

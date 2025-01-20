@@ -1,0 +1,90 @@
+/* .home-container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #6d83f2, #a8e8f2);
+    color: white;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6d83f2;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+
+
+
+
+
+
+
+   .home-container {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #6d83f2, #a8e8f2);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-button {
+    display: block; /* Makes the button behave as a block element */
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%; /* Sets the button's width to 80% of the container */
+    margin: 0 auto; /* Centers the button within the container */
+}
+
+.cta-button:hover {
+    background-color: #0056b3; /* Changes the button color on hover */
+}
+

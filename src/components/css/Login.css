@@ -1,0 +1,187 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1b3b5f, #5f9ea0);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 480px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #e0f7fa;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;  /* added */
+}
+
+input {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Ensures vertical alignment of the icon */
+}
+
+.password-container input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 3rem; /* Reserve space for the icon */
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  
+}
+
+.password-container input:focus {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.password-container .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Position the icon inside the container */
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.5rem; /* Icon size */
+  color: #4a919b;
+  transition: color 0.3s ease;
+}
+
+.password-container .toggle-password:hover {
+  color: #3d818a;
+}
+
+button {
+  width: 95%;
+  padding: 0.8rem;
+  background: #4a919b;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background: #3d818a;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+p {
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+p a {
+  color: #b2dfdb;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+p a:hover {
+  color: #81c3c7;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .login-container {
+    padding: 2rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 0.9rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-container {
+    padding: 1.5rem;
+  }
+
+  input,
+  button {
+    font-size: 0.85rem;
+    padding: 0.9rem;
+  }
+}
